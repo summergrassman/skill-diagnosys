@@ -1,16 +1,98 @@
 .section-hero {
     background-color: #173817;
 
-    & .team-member--icons {
-        display: flex;
-        gap: 1rem;
-        background-color: #DBD978;
-        border-radius: 30px;
-        padding: 0.3124rem 1rem;
+    .section-hero--team {
+        width: 100%;
+    }
 
-        & .team-member--icon img {
-            width: 22px;
+    & .section-hero--team-members-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        /*Team member styles*/
+        & .section-hero--team-member {
+            width: 20%;
+
+            /*Team member social icons styles*/
+            & .team-member--social-icons {
+                display: inline-flex;
+                background-color: #DBD978;
+                border-radius: 30px;
+                margin-bottom: 1rem;
+                padding: 0.3124rem 1rem;
+
+                & .team-member--icon {
+                    display: inline-block;
+                    margin-right: 1rem;
+
+                    a {
+                        display: block;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                & .team-member--icon img {
+                    width: 22px;
+
+                }
+            }
+
+            /*Team member image block styles*/
+            & .team-member-img-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 19.125rem;
+                height: 25.64125rem;
+                position: relative;
+
+                & .team-member-frame {
+                    height: 50%;
+                }
+
+                & .team-member--portrait img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
+
+            /*Team member text info*/
+            & .team-member--text-info {
+                color: #ffffff;
+
+                & .team-member--name {
+                    color: #ffffff;
+                    font-size: 1.5rem;
+                    line-height: 1.725rem;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                }
+
+                & .team-member--role {
+                    text-align: center;
+                    font-size: 1.125rem;
+                    line-height: 1.3125rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
         }
     }
+
 }
 
+/*Custom styles for frames*/
+.person-card--first {
+    & .team-member-frame--top{
+        background-color: #FFDD22;
+    }
+
+    & .team-member-frame--bottom{
+        background-color: #383030;
+    }
+}
