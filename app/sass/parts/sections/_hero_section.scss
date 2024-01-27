@@ -1,3 +1,16 @@
 .section-hero {
     background-color: #173817;
+
+    & .team-member--icons {
+        display: flex;
+        gap: 1rem;
+        background-color: #DBD978;
+        border-radius: 30px;
+        padding: 0.3124rem 1rem;
+
+        & .team-member--icon img {
+            width: 22px;
+        }
+    }
 }
+
