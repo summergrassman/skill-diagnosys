@@ -12,7 +12,6 @@
 
         /*Team member styles*/
         & .section-hero--team-member {
-            width: 20%;
 
             /*Team member social icons styles*/
             & .team-member--social-icons {
@@ -51,19 +50,39 @@
 
                 & .team-member-frame {
                     height: 50%;
+                    & .team-member-decor-triangle {
+                        &.triangle-down {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-left: 25px solid transparent;
+                            border-right: 25px solid transparent;
+                            border-top: 50px solid currentColor;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: 1;
+                        }
+                    }
                 }
 
-                & .team-member--portrait img {
+                & .team-member-frame--bottom {
+                    margin-bottom: 1rem;
+                }
+
+                & .team-member--portrait {
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(-50%);
+                    padding: 20px;
+                    & img {
+                        border-radius: 20px;
+                    }
                 }
             }
 
             /*Team member text info*/
             & .team-member--text-info {
                 color: #ffffff;
+                margin-bottom: 1.5rem;
 
                 & .team-member--name {
                     color: #ffffff;
@@ -90,6 +109,7 @@
 .person-card--first {
     & .team-member-frame--top{
         background-color: #FFDD22;
+        color: #FFDD22;
     }
 
     & .team-member-frame--bottom{
