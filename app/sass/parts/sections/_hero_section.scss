@@ -12,6 +12,7 @@
 
         /*Team member styles*/
         & .section-hero--team-member {
+            margin-bottom: 1rem;
 
             /*Team member social icons styles*/
             & .team-member--social-icons {
@@ -50,31 +51,68 @@
 
                 & .team-member-frame {
                     height: 50%;
+                    position: relative;
                     & .team-member-decor-triangle {
-                        &.triangle-down {
-                            position: absolute;
-                            width: 0;
-                            height: 0;
-                            border-left: 25px solid transparent;
-                            border-right: 25px solid transparent;
-                            border-top: 50px solid currentColor;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        z-index: 1;
+                    }
+                    &.team-member-frame--top {
+                        & .triangle-down {
+                            border-left: 22px solid transparent;
+                            border-right: 22px solid transparent;
+                            border-top: 40px solid currentColor;
                             top: 0;
                             left: 50%;
                             transform: translateX(-50%);
-                            z-index: 1;
+                        }
+                        & .triangle-half-left {
+                            border-top: 22px solid transparent;
+                            border-right: 40px solid transparent;
+                            border-bottom: 22px solid currentColor;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        & .triangle-half-right {
+                            border-top: 22px solid transparent;
+                            border-left: 40px solid transparent;
+                            border-bottom: 22px solid currentColor;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
+                    &.team-member-frame--bottom {
+                        & .triangle-up {
+                            border-left: 22px solid transparent;
+                            border-right: 22px solid transparent;
+                            border-bottom: 40px solid currentColor;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        & .triangle-half-left {
+                            border-top: 22px solid currentColor;
+                            border-right: 40px solid transparent;
+                            border-bottom: 22px solid transparent;
+                            top: 0;
+                            left: 0;
+                        }
+                        & .triangle-half-right {
+                            border-top: 22px solid currentColor;
+                            border-left: 40px solid transparent;
+                            border-bottom: 22px solid transparent;
+                            top: 0;
+                            right: 0;
                         }
                     }
                 }
 
-                & .team-member-frame--bottom {
-                    margin-bottom: 1rem;
-                }
-
                 & .team-member--portrait {
                     position: absolute;
-                    padding: 20px;
+                    padding: 1rem;
                     & img {
-                        border-radius: 20px;
+                        border-radius: 16px;
                     }
                 }
             }
@@ -114,5 +152,6 @@
 
     & .team-member-frame--bottom{
         background-color: #383030;
+        color: #383030;
     }
 }
