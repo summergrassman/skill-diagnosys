@@ -113,10 +113,20 @@
 
                 & .team-member--portrait {
                     position: relative;
-                    padding: 1rem;
+                    height: 100%;
                     z-index: 1;
                     & img {
                         border-radius: 16px;
+                    }
+                    & .team-member--portrait-img {
+                        position: absolute;
+                        width: calc(100% - 2rem);
+                        height: calc(100% - 2rem);
+                        background: url("../../img/portrait-team-member-1.jpg") no-repeat center;
+                        background-size: cover;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
                     }
                 }
             }
