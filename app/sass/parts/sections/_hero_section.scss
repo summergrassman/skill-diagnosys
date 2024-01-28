@@ -7,12 +7,16 @@
 
     & .section-hero--team-members-list {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: center;
 
         /*Team member styles*/
         & .section-hero--team-member {
             margin-bottom: 1rem;
+            margin-right: 1rem;
+            &:last-child {
+                margin-right: 0;
+            }
 
             /*Team member social icons styles*/
             & .team-member--social-icons {
@@ -122,7 +126,8 @@
                         position: absolute;
                         width: calc(100% - 2rem);
                         height: calc(100% - 2rem);
-                        background: url("../../img/portrait-team-member-1.jpg") no-repeat center;
+                        background-repeat: no-repeat;
+                        background-position: center;
                         background-size: cover;
                         top: 50%;
                         left: 50%;
@@ -159,14 +164,18 @@
 }
 
 /*Custom styles for frames*/
-.person-card--first {
-    & .team-member-frame--top{
+.team-member--first {
+    & .team-member-frame--top {
         background-color: #FFDD22;
         color: #FFDD22;
     }
 
-    & .team-member-frame--bottom{
+    & .team-member-frame--bottom {
         background-color: #383030;
         color: #383030;
+    }
+
+    & .team-member--portrait-img {
+        background-image: url("../../img/portrait-team-member-1.jpg");
     }
 }
