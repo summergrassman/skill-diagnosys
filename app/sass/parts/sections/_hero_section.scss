@@ -179,3 +179,51 @@
         background-image: url("../../img/portrait-team-member-1.jpg");
     }
 }
+
+.team-member--second {
+    & .team-member-frame--top {
+        background-color: #780D1A;
+        color: #780D1A;
+    }
+
+    & .team-member-frame--bottom {
+        background-color: #F73821;
+        color: #F73821;
+    }
+
+    & .team-member--portrait-img {
+        background-image: url("../../img/portrait-team-member-2.jpg");
+    }
+}
+
+.team-member--third {
+    & .team-member-frame--top {
+        background-color: #FF97B3;
+        color: #FF97B3;
+    }
+
+    & .team-member-frame--bottom {
+        background-color: #E55C21;
+        color: #E55C21;
+    }
+
+    & .team-member--portrait-img {
+        background-image: url("../../img/portrait-team-member-1.jpg");
+    }
+}
+
+.team-member--fourth {
+    & .team-member-frame--top {
+        background-color: #A3C7ED;
+        color: #A3C7ED;
+    }
+
+    & .team-member-frame--bottom {
+        background-color: #0A2640;
+        color: #0A2640;
+    }
+
+    & .team-member--portrait-img {
+        background-image: url("../../img/portrait-team-member-2.jpg");
+    }
+}
