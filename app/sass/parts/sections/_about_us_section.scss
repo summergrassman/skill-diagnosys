@@ -1,0 +1,11 @@
+.section-about-us {
+    background-color: #FF97B3;
+
+    & .column--half-width {
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
