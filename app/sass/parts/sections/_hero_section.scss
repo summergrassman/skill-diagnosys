@@ -14,6 +14,9 @@
         & .section-hero--team-member {
             margin-bottom: 1rem;
             margin-right: 1rem;
+            @include mq-inv-tablet {
+                max-width: 306px;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -176,7 +179,7 @@
     }
 
     & .team-member--portrait-img {
-        background-image: url("../../img/portrait-team-member-1.jpg");
+        background-image: url("../img/portrait-team-member-1.jpg");
     }
 }
 
@@ -192,7 +195,7 @@
     }
 
     & .team-member--portrait-img {
-        background-image: url("../../img/portrait-team-member-2.jpg");
+        background-image: url("../img/portrait-team-member-2.jpg");
     }
 }
 
@@ -208,7 +211,7 @@
     }
 
     & .team-member--portrait-img {
-        background-image: url("../../img/portrait-team-member-1.jpg");
+        background-image: url("../img/portrait-team-member-1.jpg");
     }
 }
 
@@ -224,6 +227,17 @@
     }
 
     & .team-member--portrait-img {
-        background-image: url("../../img/portrait-team-member-2.jpg");
+        background-image: url("../img/portrait-team-member-2.jpg");
+    }
+}
+
+.slick-arrow {
+    color: #ffffff;
+    padding: 20px;
+    &.slick-prev {
+        order: 1;
+    }
+    &.slick-next {
+        order: 2;
     }
 }
