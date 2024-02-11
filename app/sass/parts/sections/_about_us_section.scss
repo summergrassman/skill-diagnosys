@@ -18,7 +18,44 @@
         padding: 60px 50px;
         background-color: #780D1A;
         border-radius: 20px;
-        color: rgba(255, 255, 255, 0.8);
+        color: #FF97B3;
+        position: relative;
+        height: 100%;
+        & .about-us-decor-triangle {
+            position: absolute;
+            &.about-us-decor-triangle--top {
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 35px solid currentColor;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &.about-us-decor-triangle--right {
+                border-right: 35px solid currentColor;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+            &.about-us-decor-triangle--bottom {
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 35px solid currentColor;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &.about-us-decor-triangle--left {
+                border-left: 35px solid currentColor;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
     }
 
     & .section-about-us--title {
@@ -34,5 +71,22 @@
         margin-bottom: 30px;
         font-size: 21px;
         line-height: 32px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    & .section-about-us--button {
+        background-color: #FF97B3;
+        padding: 16px;
+        border-radius: 30px;
+        max-width: 283px;
+        width: 100%;
+        color: #000000;
+        font-style: italic;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.4px;
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }
