@@ -1,11 +1,38 @@
 .section-about-us {
     background-color: #FF97B3;
 
+    & .row.section-about-us--row {
+        display: flex;
+        justify-content: space-between;
+    }
+
     & .column--half-width {
         width: calc(50% - 1rem);
         margin-right: 1rem;
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    & .section-about-us--card {
+        padding: 60px 50px;
+        background-color: #780D1A;
+        border-radius: 20px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    & .section-about-us--title {
+        font-size: 80px;
+        line-height: 92px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+        color: #ffffff;
+    }
+
+    & .section-about-us--paragraph {
+        margin-bottom: 30px;
+        font-size: 21px;
+        line-height: 32px;
     }
 }
