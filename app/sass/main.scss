@@ -14,10 +14,11 @@ body {
 
 section {
 	display: block;
+	padding: 80px 0;
 }
 
 .container {
-	max-width: 1250px;
+	max-width: 1352px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 25px;
@@ -40,9 +41,11 @@ main {
 @import 'parts/header';
 @import 'parts/section-title';
 @import 'parts/layout';
-//pages
-//@import 'pages/front_page';
-@import 'pages/page';
+
+
+//parts
+@import 'parts/sections/hero_section';
+@import 'parts/sections/about_us_section';
 
 @import 'parts/seach_form';
 //footer
