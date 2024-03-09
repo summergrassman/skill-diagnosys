@@ -1,2 +1,78 @@
 /* Contact us section styles*/
+.section-contact-us {
+    background-color: #B3DFB3;
+    padding: 80px 0;
+    & .contact-us--heading {
+        color: #31363D;
+        font-size: 48px;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+     & .container {
+        &.container--contact-us {
+            flex-direction: column;
+        }
+    }
+
+    & .contact-form-wrapper {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    & .contact-form--row {
+        &.contact-form--row-with-recaptcha-and-submit {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    & .contact-form--label-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        & .contact-form--label-text {
+            color: #31363D;
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    & .input-field {
+        background-color: #ffffff;
+        padding: 18px 24px;
+        border-radius: 16px;
+        font-family: Lato, sans-serif;
+        font-size: 18px;
+        line-height: 27px;
+
+        &.input-field--textarea {
+            min-height: 144px;
+        }
+
+        &.input-field--submit-button {
+            background-color: #008751;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 900;
+            &:disabled {
+                background-color: #A9A9A9;
+            }
+        }
+    }
+
+    & .contact-form--recaptcha-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+}
 
