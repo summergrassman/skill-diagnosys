@@ -1,2 +1,26 @@
 /* Contact us section styles*/
+.section-contact-us {
+    background-color: #B3DFB3;
+    padding: 80px 0;
+    & .contact-us--heading {
+        color: #31363D;
+        font-size: 48px;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+     & .container {
+        &.container--contact-us {
+            flex-direction: column;
+        }
+    }
+
+    & .contact-form-wrapper {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
 
