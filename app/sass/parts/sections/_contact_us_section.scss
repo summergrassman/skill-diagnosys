@@ -44,6 +44,11 @@
         }
     }
 
+    & .help-block.filled span {
+        font-size: 13px;
+        color: #D1003F;
+    }
+
     & .input-field {
         background-color: #ffffff;
         padding: 18px 24px;
@@ -60,6 +65,11 @@
         &.custom-error-message {
             color: #D1003F;
             border-color: #D1003F;
+        }
+
+        &.custom-success-message {
+            color: #00B56D;
+            border-color: #00B56D;
         }
 
         &.input-field--textarea {

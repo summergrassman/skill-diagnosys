@@ -9,19 +9,19 @@
                 <div class="contact-form--row">
                     <label class="contact-form--label-block">
                         <span class="contact-form--label-text">Name</span>
-                        <input class="input-field input-field--name" type="text" name="user_name" placeholder="John Doe" required>
+                        <input class="input-field input-field--name" type="text" name="user_name" placeholder="John Doe" data-parsley-trigger="change focusout" required>
                     </label>
                 </div>
                 <div class="contact-form--row">
                     <label class="contact-form--label-block">
                         <span class="contact-form--label-text">Email</span>
-                        <input class="input-field input-field--email" type="email" name="user_email" placeholder="johndoe@gmail.com" data-parsley-trigger="change" required>
+                        <input class="input-field input-field--email" type="email" name="user_email" placeholder="johndoe@gmail.com" data-parsley-trigger="change focusout" required>
                     </label>
                 </div>
                 <div class="contact-form--row">
                     <label class="contact-form--label-block">
                         <span class="contact-form--label-text">Your Message</span>
-                        <textarea class="input-field input-field--textarea" name="user_message" placeholder="Tell us what you need and we’ll take care of the rest." required></textarea>
+                        <textarea class="input-field input-field--textarea" name="user_message" placeholder="Tell us what you need and we’ll take care of the rest." data-parsley-trigger="change focusout" required></textarea>
                     </label>
                 </div>
                 <div class="contact-form--row contact-form--row-with-recaptcha-and-submit">
