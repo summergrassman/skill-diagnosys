@@ -51,6 +51,16 @@
         font-family: Lato, sans-serif;
         font-size: 18px;
         line-height: 27px;
+        border: 2px solid #ffffff;
+
+        &:focus {
+            border-color: #00B56D;
+        }
+
+        &.custom-error-message {
+            color: #D1003F;
+            border-color: #D1003F;
+        }
 
         &.input-field--textarea {
             min-height: 144px;
@@ -62,8 +72,10 @@
             font-size: 20px;
             line-height: 22px;
             font-weight: 900;
+            border-color: #008751;
             &:disabled {
                 background-color: #A9A9A9;
+                border-color: #A9A9A9;
             }
         }
     }
