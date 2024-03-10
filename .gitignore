@@ -2,10 +2,10 @@
 node_modules/
 .idea/
 .history/
-app/css
+app/css/
 app/*.html
 app/html-dev/index.html
 
-# Allow index.html from build
+# Allow index.html and main.css from build
 !app/index.html
-!app/css/main.css
+!app/css/main.*
