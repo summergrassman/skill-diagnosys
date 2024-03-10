@@ -8,3 +8,4 @@ app/html-dev/index.html
 
 # Allow index.html from build
 !app/index.html
+!app/css/main.css
