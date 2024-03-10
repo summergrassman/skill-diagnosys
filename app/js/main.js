@@ -50,5 +50,30 @@ $(document).ready(function () {
         }
     });
 
+    // Contact form validation
+    var mainForm = $('#contactForm');
+    var submitButton = $('#submitButton');
+
+    mainForm.parsley({
+        successClass: 'custom-success-message',
+        errorClass: 'custom-error-message',
+        errorsWrapper: '<span class="help-block"></span>',
+        errorTemplate: '<span></span>',
+    });
+
+    mainForm.on('form:success', function () {
+        // This event is triggered on successful form validation
+        submitButton.prop('disabled', false);
+    });
+
+    mainForm.on('form:validate', function () {
+        var isValid = mainForm.parsley().isValid();
+        submitButton.prop('disabled', !isValid);
+    });
+
+    mainForm.find('input, textarea').on('input', function () {
+        var isValid = $(this).parsley().isValid();
+        $(this).toggleClass('valid-input', isValid).toggleClass('invalid-input', !isValid);
+    });
 
 }, jQuery);
